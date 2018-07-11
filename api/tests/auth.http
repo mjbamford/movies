@@ -1,0 +1,24 @@
+
+POST http://localhost:7000/auth/register
+Content-Type: application/json
+
+{ 
+    "email": "john.brown@example.com",
+    "password": "password1",
+    "firstName": "Jack",
+    "lastName": "Citizen"
+}
+
+###
+POST http://localhost:7000/auth
+Content-Type: application/json
+
+{ 
+    "email": "john.brown@example.com",
+    "password": "password1"
+}
+
+###
+http://localhost:7000/movies
+Content-Type: application/json
+Authorization: Bearer 

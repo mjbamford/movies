@@ -1,0 +1,39 @@
+http://localhost:3000/test
+
+###
+http://localhost:7000/movies
+Authorization: Bearer 666
+
+###
+http://localhost:3000/movies/5b2867455dacd427955611ed
+
+###
+POST http://localhost:7000/movies
+Content-type: application/json
+Authorization: Bearer 666
+
+{
+    "title": "Wonder Woman",
+    "yearReleased": 2017,
+    "rating": { "code": "PG", "description": "Parent's Guidance" },
+    "comments": [
+        { "body": "This is a great movie" },
+        { "body": "This is a terrible movie" }
+    ],
+    "director": "5b29b3ece288909215ca20eb"
+}
+
+###
+POST http://localhost:3000/movies
+Content-type: application/json
+
+{
+    "title": "Superman",
+    "yearReleased": 2010,
+    "rating": { "code": "PG", "description": "Parent's Guidance" },
+    "comments": [
+        { "body": "Dreaful moveie" },
+        { "body": "Waste of time" }
+    ],
+    "director": "5b29b3ece288909215ca20eb"
+}
